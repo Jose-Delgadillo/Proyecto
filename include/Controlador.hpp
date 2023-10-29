@@ -2,7 +2,6 @@
 #include <Actualizable.hpp>
 #include <Dibujo.hpp>
 #include <curses.h>
-#include <iostream>
 
 class Controlador : public Actualizable
 {
@@ -16,10 +15,6 @@ public:
     
     void Actualizar()
     {
-         if(getch() == 'q')
-         {
-            
-         }
          if(getch() == 'd'){
              d1->AvanzarX(1);
          }

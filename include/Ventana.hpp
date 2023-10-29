@@ -46,6 +46,7 @@ public:
         for (auto &&dibujo : dibujos)
         {
             dibujo->Dibujar();
+            
         }
         
         refresh();

@@ -49,10 +49,7 @@ public:
         while (getline(archivo,linea))
         {
             int y_linea = getcury(stdscr);
-            mvaddstr(y_linea + 1,
-             this->x,
-              linea.c_str()
-            );
+            mvaddstr(y_linea + 1,this->x,linea.c_str());
         }
         archivo.clear();
         archivo.seekg(0);

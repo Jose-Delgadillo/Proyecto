@@ -27,6 +27,7 @@ int main(int argc, char const *argv[])
     actualizables.push_back(control);
     actualizables.push_back(fr);
     
+    
     bool ejecucion = true;
     while (ejecucion)
     {
