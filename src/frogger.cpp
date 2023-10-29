@@ -12,11 +12,11 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     Ventana v;
+    Dibujo* d1 = new Dibujo(0,0,"frog");
+    Dibujo* d2 = new Dibujo(0,0,"frogjump");
     Frog* fr = new Frog();
-    Controlador* control = new Controlador(); 
+    Controlador* control = new Controlador(d1, d2);
 
-    Dibujo* d1 = new Dibujo(2,1,"frog");
-    Dibujo* d2 = new Dibujo(20,1,"frogjump");
 
     list<Dibujo*> dibujos;
     dibujos.push_back(d1);

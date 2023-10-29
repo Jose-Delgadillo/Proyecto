@@ -16,7 +16,7 @@ private:
 public:
     Dibujo(int x, int y,string recurso){
         this->recurso = recurso;
-        archivo.open("./data/"+ this->recurso +".txt");
+        archivo.open("./data/"+ this->recurso +"frog.txt");
         this->x=x;
         this->y=y;
 
@@ -34,6 +34,12 @@ public:
     }
     void RetrocederX(int x){
         this->x -= x;
+    }
+    void SaltarY(int y){
+        this->y += y;
+    }
+    void BajarY(int y){
+        this->y -= y;
     }
     void Dibujar()
     {
